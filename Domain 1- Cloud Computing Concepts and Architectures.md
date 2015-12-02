@@ -312,7 +312,7 @@ The domains are divided into two broad categories: governance and operations.  T
 1. Use tools like the CSA Common Assessment Initiative Questionnaire (CAIQ) to evaluate and compare cloud providers.
 1. Cloud providers should clearly document their security controls and features and publish them using tools like the CSA CAIQ
 1. Use tools like the CSA Cloud Controls Matrix (CCM) to assess and document cloud project security and compliance requirements and controls, and who is responsible for each.
-1. Use a cloud security process model to select providers, design architectures, identify control gaps, and implement security and compliance controls.
+1. Use a cloud security process model to select providers, choose deployment modes, design architectures, identify control gaps, and implement security and compliance controls.
 
 ## 1.5 Credits
 
