@@ -76,7 +76,7 @@ These are the characteristics that make a cloud a cloud. If something has these 
 * *Resource pooling* is the most fundamental characteristic, as discussed above. The provider abstracts resources and collects them into a pool, portions of which can be allocated to different consumers (typically based on policies).
 * Consumers provision the resources from the pool using *on-demand self service*. They manage their resources themselves, without having to talk to a human administrator.
 * *Broad network access* means all resources are available over the network, without any need for direct physical access.
-* *Rapid elasticity* allows consumers to expand or contract the resources they use from the pool (provisioning and deprovisioning), often completely automatically. This allows the to more closely match resource consumption with demand (for example, adding virtual servers as demand increases, then shutting them down when demand drops).
+* *Rapid elasticity* allows consumers to expand or contract the resources they use from the pool (provisioning and deprovisioning), often completely automatically. This allows them to more closely match resource consumption with demand (for example, adding virtual servers as demand increases, then shutting them down when demand drops).
 * *Measured service* meters what is provided, to ensure consumers only use what they are allotted, and to, if needed, charge them for it. This is where the term *utility computing* comes from, since computing resources can now be consumed like water and electricity, with the client only paying for what they use.
 
 ISO/IEC 17788 lists six key characteristics, the first five of which are identical to the NIST characteristics. The only addition is *multi-tenancy* as separate from resource pooling.
@@ -127,9 +127,9 @@ Physical facilities and infrastructure hardware forms the foundation of **IaaS**
 
 All this is facilitated using *Application Programming Interfaces (APIs)*. APIs are typically the underlying communications method for components within a cloud, some of which (or a different set of) are exposed to the cloud consumer to manage their resources and configurations. Most cloud APIs these days are *REST* based (Representational State Transfer), which runs over the HTTP protocol, making it extremely well suited for Internet services.
 
-In most cases, those APIs are both remotely accessible and wrapped into a web-based user interface. This combination is the *cloud management plane* since consumers use it to manage and configure the cloud resources, such as launching virtual machines (instances) or configuring virtual networks. From a security perspective, it is the both the biggest difference from protecting physical infrastructure (since you can't rely on physical access as a control), and the top priority when designing a cloud security program. If an attacker gets into your management plane, they potentially have full, remote access to your entire cloud depoyment.
+In most cases, those APIs are both remotely accessible and wrapped into a web-based user interface. This combination is the *cloud management plane* since consumers use it to manage and configure the cloud resources, such as launching virtual machines (instances) or configuring virtual networks. From a security perspective, it is the both the biggest difference from protecting physical infrastructure (since you can't rely on physical access as a control), and the top priority when designing a cloud security program. If an attacker gets into your management plane, they potentially have full, remote access to your entire cloud deployment.
 
-Thus IaaS consists of a facility, hardware, an abstration layer, an orchestration (core connectivity and delivery) layer to tie together the abstracted resources, and APIs to remotely manage the resources and deliver them to consumers.
+Thus IaaS consists of a facility, hardware, an abstraction layer, an orchestration (core connectivity and delivery) layer to tie together the abstracted resources, and APIs to remotely manage the resources and deliver them to consumers.
 
 Here is a simplified architectural example of a compute IaaS platform:
 
@@ -214,7 +214,7 @@ These roles are further complicated when using cloud brokers or other intermedia
 
 *The most important security consideration is knowing exactly who is responsible for what for any given cloud project.* It's less important if any particular cloud provider offers a specific security control, as long as you know precisely what they do and how it works, and then you can fill the gaps with your own controls, or choose a different provider if you can't close the controls gap. Your ability to do this is very high for IaaS, and less so for SaaS.
 
-This is the essence of the security relationship between a cloud provider and consumer. What does the provider do? What does the consumer need need to do? Does the cloud provider enable the consumer to do what they need to? What is guaranteed in the contract and service level agreements, and what is implied by the documentation and specifics of the technology?
+This is the essence of the security relationship between a cloud provider and consumer. What does the provider do? What does the consumer need to do? Does the cloud provider enable the consumer to do what they need to? What is guaranteed in the contract and service level agreements, and what is implied by the documentation and specifics of the technology?
 
 The shared responsibility directly correlates to two recommendations:
 
@@ -247,7 +247,7 @@ The CSA has reviewed and recommends the following models:
 * The [CSA Enterprise Architecture][10]
 * The CSA [Cloud Controls Matrix (CCM)][11]
 * The NIST draft [Cloud Computing Security Reference Architecture (NIST Special Publication 500-299)][12] , which includes conceptual models, reference architectures, and a controls framework.
-* ISO/IEC has a standard under development, which wasn't released yet when we wrote this section, but should be available soon: [ISO/IEC FDIS 27017 Information technology -- Security techniques -- Code of practice for information security controls based on ISO/IEC 27002 for cloud services][13].
+* [ISO/IEC FDIS 27017 Informatiwon technology -- Security techniques -- Code of practice for information security controls based on ISO/IEC 27002 for cloud services][13].
 
 [10]: https://research.cloudsecurityalliance.org/tci/index.php/explore/
 [11]: https://cloudsecurityalliance.org/group/cloud-controls-matrix/
@@ -289,7 +289,7 @@ The domains are divided into two broad categories: governance and operations.  T
 |	2	|	Governance and Enterprise Risk Management		|	The ability of an organization to govern and measure enterprise risk introduced by cloud computing.  Items such as legal precedence for agreement breaches, ability of user organizations to adequately assess risk of a cloud provider, responsibility to protect sensitive data when both user and provider may be at fault, and how international boundaries may affect these issues.	|
 |	3	|	Legal Issues: Contracts and Electronic Discovery	|	Potential legal issues when using cloud computing.  Issues touched on in this section include protection requirements for information and computer systems, security breach disclosure laws, regulatory requirements, privacy requirements, international laws, etc.	|
 |	4	|	Compliance and Audit Management	|	Maintaining and proving compliance when using cloud computing. Issues dealing with evaluating how cloud computing affects compliance with internal security policies, as well as various compliance requirements (regulatory, legislative, and otherwise) are discussed here.  This domain includes some direction on proving compliance during an audit.	|
-|	5	|	Data Governance 	|	Governing data that is placed in the cloud.  Items surrounding the identification and control of data in the cloud, as well as compensating controls that can be used to deal with the loss of physical control when moving data to the cloud, are discussed here. Other items, such as who is responsible for data confidentiality, integrity, and availability are mentioned. 	|
+|	5	|	Information Governance 	|	Governing data that is placed in the cloud.  Items surrounding the identification and control of data in the cloud, as well as compensating controls that can be used to deal with the loss of physical control when moving data to the cloud, are discussed here. Other items, such as who is responsible for data confidentiality, integrity, and availability are mentioned. 	|
 
 ### 1.3.2 Operating in the Cloud
 
